@@ -1,3 +1,7 @@
+"""
+Poisson problem: -laplacian(u)(x,y) = f(x,y)
+Method of manufacture soution using FEM
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.tri as mtri
@@ -19,7 +23,6 @@ def f(x,y):
     return -2*(x**2 + y**2)
     # return 0
 
-# We wish to solve -laplacian(u)(x,y) = f(x,y)
 
 def plot_on_grid(u_inp, title, fname, triang):
     cplot = plt.tricontourf(triang, u_inp, levels = 100)
