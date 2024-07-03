@@ -1,3 +1,10 @@
+"""
+Opens log_runs.txt
+Expects 10 coloumns
+Assigns each column an identity
+Plots each coloumn wrt the first coloumn
+Save
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 
