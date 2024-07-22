@@ -37,5 +37,7 @@ for i_col, col in enumerate(col_details):
     plt.plot(col_details[0][2], vals)
     plt.xlabel("Nx")
     plt.grid()
+    plt.xscale('log')
+    plt.yscale('log')
     plt.savefig(f"log_plot{i_col}_NX.png")
     plt.close()
