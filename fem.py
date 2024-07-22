@@ -136,7 +136,6 @@ print(num_points, np.linalg.norm(u_sol - u_exct), end = "")
 t_beg = checkpoints[0]
 for t in checkpoints:
     print(" ", t - t_beg, end = "")
-print(" ", t_beg)
-    
-
+    t_beg = t
+print(" ", checkpoints[0])
     
